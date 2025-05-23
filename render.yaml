@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: agency-trade-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: VERIFY_TOKEN
+        value: agencytrade2025
+      - key: ACCESS_TOKEN
+        value: TU_ACCESS_TOKEN_DE_FACEBOOK
